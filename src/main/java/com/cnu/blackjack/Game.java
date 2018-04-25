@@ -1,4 +1,5 @@
 package com.cnu.blackjack;
+import lombok.Data;
 
 import com.cnu.blackjack.exceptions.DuplicatePlayerException;
 import com.cnu.blackjack.exceptions.NotEveyonePlacedBetException;

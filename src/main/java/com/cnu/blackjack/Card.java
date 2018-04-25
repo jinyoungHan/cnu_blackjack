@@ -1,4 +1,5 @@
 package com.cnu.blackjack;
+import lombok.Data;
 
 import com.cnu.blackjack.exceptions.NoSuchRankException;
 import lombok.Data;
@@ -18,4 +19,5 @@ public class Card {
         this.rank = rank;
         this.suit = suit;
     }
+
 }

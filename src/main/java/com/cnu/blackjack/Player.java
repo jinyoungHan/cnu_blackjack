@@ -1,4 +1,5 @@
 package com.cnu.blackjack;
+import lombok.Data;
 
 import com.cnu.blackjack.exceptions.NotEnoughBalanceException;
 import lombok.Data;
@@ -29,7 +30,10 @@ public class Player {
         return hand.drawCard();
     }
 
+    /* Player 의 카드 리스트를 알기위한 함수 추가 */
     public List<Card> getCard() {
         return hand.getCardList();
     }
+
+
 }
