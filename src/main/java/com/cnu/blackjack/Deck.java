@@ -29,14 +29,15 @@ public class Deck {
         }
     }
 
+
     public int getTotalCard() {
         return cardList.size();
     }
 
     public Card drawCard() {
-        if (cardList.size() == 0) {
-            throw new NoMoreCardException();
-        }
-        return cardList.remove(0);
+    if (cardList.size() == 0) {
+        throw new NoMoreCardException();
     }
+    return cardList.remove(0);
+}
 }

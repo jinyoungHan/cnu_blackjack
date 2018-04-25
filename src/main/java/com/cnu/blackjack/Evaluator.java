@@ -7,6 +7,7 @@ public class Evaluator {
     private Map<String, Player> playerMap;
     private Dealer dealer;
 
+
     public Evaluator(Map<String, Player> playerMap) {
         this.playerMap = playerMap;
         dealer = new Dealer();
@@ -15,12 +16,19 @@ public class Evaluator {
 
     public void start() {
 
+
+
     }
 
-    private void dealCardToPlayers() {
+     void dealCardToPlayers() {
         playerMap.forEach((name, player) -> {
             player.hitCard();
             player.hitCard();
         });
+    }
+
+    public void result() {
+
+
     }
 }

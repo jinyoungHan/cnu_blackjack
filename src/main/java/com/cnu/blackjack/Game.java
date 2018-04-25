@@ -29,11 +29,11 @@ public class Game {
         return playerList;
     }
 
-    public void start() {
-        playerList.forEach((name, player) -> {
-            if (player.getCurrentBet() == 0) {
-                throw new NotEveyonePlacedBetException();
-            }
+            public void start() {
+                playerList.forEach((name, player) -> {
+                    if (player.getCurrentBet() == 0) {
+                        throw new NotEveyonePlacedBetException();
+                    }
         });
 
 

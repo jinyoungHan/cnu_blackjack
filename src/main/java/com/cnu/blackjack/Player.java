@@ -3,6 +3,8 @@ package com.cnu.blackjack;
 import com.cnu.blackjack.exceptions.NotEnoughBalanceException;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class Player {
 
@@ -25,5 +27,9 @@ public class Player {
 
     public Card hitCard() {
         return hand.drawCard();
+    }
+
+    public List<Card> getCard() {
+        return hand.getCardList();
     }
 }

@@ -1,12 +1,12 @@
 package com.cnu.blackjack;
 
-import com.cnu.blackjack.exceptions.NotEveyonePlacedBetException;
-import org.junit.Test;
+        import com.cnu.blackjack.exceptions.NotEveyonePlacedBetException;
+        import org.junit.Test;
 
-import java.util.Map;
+        import java.util.Map;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
+        import static org.hamcrest.CoreMatchers.is;
+        import static org.hamcrest.MatcherAssert.assertThat;
 
 public class GameTest {
 
