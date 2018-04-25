@@ -16,11 +16,10 @@ public class Evaluator {
 
     public void start() {
 
-
-
+        
     }
 
-     void dealCardToPlayers() {
+     private void dealCardToPlayers() {
         playerMap.forEach((name, player) -> {
             player.hitCard();
             player.hitCard();
