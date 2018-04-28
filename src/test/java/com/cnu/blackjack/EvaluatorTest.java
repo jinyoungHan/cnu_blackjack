@@ -21,7 +21,7 @@ public class EvaluatorTest {
 
         game.addPlayer("cnu1조", 200);
         Evaluator evaluator = new Evaluator(game.getPlayerList());
-        player = game.getPlayerList().get("cnu1조");
+        player = game.getPlayerList().get("cnu최강1조");
         assertThat(player.getCard().size(), is(2));
 
 
