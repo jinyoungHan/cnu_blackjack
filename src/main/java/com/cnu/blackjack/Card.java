@@ -1,4 +1,5 @@
 package com.cnu.blackjack;
+import lombok.Data;
 
 import com.cnu.blackjack.exceptions.NoSuchRankException;
 import lombok.Data;
@@ -12,7 +13,11 @@ public class Card {
         if (rank > 13) {
             throw new NoSuchRankException();
         }
+        if(rank == 11 || rank == 12 || rank == 13) {
+            rank = 10;
+        }
         this.rank = rank;
         this.suit = suit;
     }
+
 }
